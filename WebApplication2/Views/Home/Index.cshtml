@@ -1,21 +1,21 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="~/Content/styles.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="~/Content/EstilosGeneral/styles.css" rel="stylesheet" />
+<link href="~/Content/EstilosGeneral/CajaTextoYoko.css" rel="stylesheet" />
 
-    <div class="row d-flex justify-content-end" style="margin-top: 20px;">
-        <div class="col Div">Catálogo de cargo</div>
-       
-        <div >
-            <input type="search" class="form-control "/> 
-        </div>
-        <button type="button" class="btn Boton">Nuevo cargo</button>
-    </div>
+<div class="row d-flex justify-content-end" style="margin-top: 20px;">
+    <div class="col Div">Catálogo de cargo</div>
 
-<hr/>
+    <button type="button" class="btn Boton" data-toggle="modal" data-target="#modalCargo">Nuevo cargo</button>
+    @Html.Partial("ModalNuevoCargo")
+</div>
 
-<div class="row d-flex justify-content-center" style="margin-top: 10px;">
+<hr />
+
+
+<div class="row d-flex justify-content-center" style="margin-top: 10px" ; id="padre">
     <div class="cardView">
         <div class="linea"></div>
         <div class="custom-switch d-flex justify-content-between">
@@ -44,196 +44,5 @@
         </div>
 
     </div>
-
-
-    <div class="cardView">
-        <div class="linea"></div>
-        <div class="custom-switch d-flex justify-content-between">
-            <div class="spanText">
-                Catálogo de cargo
-            </div>
-            <div style="margin-top: 5px;">
-                <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                <label class="custom-control-label" for="customSwitch2"></label>
-            </div>
-        </div>
-        <div class="hr"></div>
-        <div>
-            <div class="d-flex justify-content-center ammountText">
-                $2,300.00
-            </div>
-        </div>
-        <div class="d-flex justify-content-end" style="margin-right: 10px;">
-            <a href="#">
-                <i class="material-icons icono">border_color</i>
-            </a>
-            <a href="#">
-                <i class="material-icons icono">delete</i>
-            </a>
-        </div>
-    </div>
-
-    <div class="cardView">
-        <div class="linea"></div>
-        <div class="custom-switch d-flex justify-content-between">
-            <div class="spanText">
-                Catálogo de cargo
-            </div>
-            <div style="margin-top: 5px;">
-                <input type="checkbox" class="custom-control-input" id="customSwitch3">
-                <label class="custom-control-label" for="customSwitch3"></label>
-            </div>
-        </div>
-        <div class="hr"></div>
-        <div>
-            <div class="d-flex justify-content-center ammountText">
-                $9,900.00
-            </div>
-        </div>
-        <div class="d-flex justify-content-end" style="margin-right: 10px;">
-            <a href="#">
-                <i class="material-icons icono">border_color</i>
-            </a>
-            <a href="#">
-                <i class="material-icons icono">delete</i>
-            </a>
-        </div>
-    </div>
-
-    <div class="cardView">
-        <div class="linea"></div>
-        <div class="custom-switch d-flex justify-content-between">
-            <div class="spanText">
-                Catálogo de cargo
-            </div>
-            <div style="margin-top: 5px;">
-                <input type="checkbox" class="custom-control-input" id="customSwitch4">
-                <label class="custom-control-label" for="customSwitch4"></label>
-            </div>
-        </div>
-        <div class="hr"></div>
-        <div>
-            <div class="d-flex justify-content-center ammountText">
-                $500,300.00
-            </div>
-        </div>
-        <div class="d-flex justify-content-end" style="margin-right: 10px;">
-            <a href="#">
-                <i class="material-icons icono">border_color</i>
-            </a>
-            <a href="#">
-                <i class="material-icons icono">delete</i>
-            </a>
-        </div>
-    </div>
-
-    <div class="cardView">
-        <div class="linea"></div>
-        <div class="custom-switch d-flex justify-content-between">
-            <div class="spanText">
-                Catálogo de cargo
-            </div>
-            <div style="margin-top: 5px;">
-                <input type="checkbox" class="custom-control-input" id="customSwitch5">
-                <label class="custom-control-label" for="customSwitch5"></label>
-            </div>
-        </div>
-        <div class="hr"></div>
-        <div>
-            <div class="d-flex justify-content-center ammountText">
-                $6,000.50
-            </div>
-        </div>
-        <div class="d-flex justify-content-end" style="margin-right: 10px;">
-            <a href="#">
-                <i class="material-icons icono">border_color</i>
-            </a>
-            <a href="#">
-                <i class="material-icons icono">delete</i>
-            </a>
-        </div>
-    </div>
-
-    <div class="cardView">
-        <div class="linea"></div>
-        <div class="custom-switch d-flex justify-content-between">
-            <div class="spanText">
-                Catálogo de cargo
-            </div>
-            <div style="margin-top: 5px;">
-                <input type="checkbox" class="custom-control-input" id="customSwitch6">
-                <label class="custom-control-label" for="customSwitch6"></label>
-            </div>
-        </div>
-        <div class="hr"></div>
-        <div>
-            <div class="d-flex justify-content-center ammountText">
-                $15,400.00
-            </div>
-        </div>
-        <div class="d-flex justify-content-end" style="margin-right: 10px;">
-            <a href="#">
-                <i class="material-icons icono">border_color</i>
-            </a>
-            <a href="#">
-                <i class="material-icons icono">delete</i>
-            </a>
-        </div>
-    </div>
-
-    <div class="cardView">
-        <div class="linea"></div>
-        <div class="custom-switch d-flex justify-content-between">
-            <div class="spanText">
-                Catálogo de cargo
-            </div>
-            <div style="margin-top: 5px;">
-                <input type="checkbox" class="custom-control-input" id="customSwitch7">
-                <label class="custom-control-label" for="customSwitch7"></label>
-            </div>
-        </div>
-        <div class="hr"></div>
-        <div>
-            <div class="d-flex justify-content-center ammountText">
-                $12,300.00
-            </div>
-        </div>
-        <div class="d-flex justify-content-end" style="margin-right: 10px;">
-            <a href="#">
-                <i class="material-icons icono">border_color</i>
-            </a>
-            <a href="#">
-                <i class="material-icons icono">delete</i>
-            </a>
-        </div>
-    </div>
-
-    <div class="cardView">
-        <div class="linea"></div>
-        <div class="custom-switch d-flex justify-content-between">
-            <div class="spanText">
-                Catálogo de cargo
-            </div>
-            <div style="margin-top: 5px;">
-                <input type="checkbox" class="custom-control-input" id="customSwitch8">
-                <label class="custom-control-label" for="customSwitch8"></label>
-            </div>
-        </div>
-        <div class="hr"></div>
-        <div>
-            <div class="d-flex justify-content-center ammountText">
-                $5,000.00
-            </div>
-        </div>
-        <div class="d-flex justify-content-end" style="margin-right: 10px;">
-            <a href="#">
-                <i class="material-icons icono">border_color</i>
-            </a>
-            <a href="#">
-                <i class="material-icons icono">delete</i>
-            </a>
-        </div>
-    </div>
-
 </div>
 

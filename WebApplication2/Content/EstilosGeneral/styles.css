@@ -1,0 +1,64 @@
+﻿.Boton {
+    margin-left: 10px;
+    height: 38px;
+    background-color: rgb(57, 206, 125);
+    font-family: 'Google Sans';
+    border-radius: 8px 8px 8px 8px;
+}
+.Div {
+    color: dimgray;
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Google Sans';
+}
+
+.linea {
+    background-color: rgb(57, 206, 125);
+    height: 10px;
+    width: auto;
+    position: fixed absolute;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.cardView {
+    width: 300px;
+    height: 150px;
+    margin: .50%;
+    border-radius: 8px 8px 8px 8px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.45);
+}
+
+.spanText {
+    text-align: left;
+    color: black;
+    font-family: 'Google Sans';
+    margin-top: 2px;
+    font-size: 20px;
+}
+
+.ammountText {
+    text-align: left;
+    color: dimgray;
+    font-family: 'Google Sans';
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 28px;
+    text-shadow: 1px 1px 3px dimgray;
+}
+
+.icono {
+    margin-top: 14px;
+    margin-left: 12px;
+    color: gray;
+    text-shadow: 2px 2px 2px #ccc;
+    font-size: 20px;
+}
+
+.hr{
+    height:2px;
+    border-radius: 1px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: lightgray;
+}

@@ -1,0 +1,40 @@
+﻿<link href="~/Content/EstilosGeneral/ModalStyles.css" rel="stylesheet" />
+<script language="JavaScript" type="text/javascript" src="~/Scripts/Javascript/Modal.js"></script>
+
+<div class="modal fade" tabindex="-1" role="tabpanel" id="modalCargo" aria-labelledby="Rol-tab">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Nuevo cargo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group" required>
+                    <label for="id-titulo" class="col-form-label">Título:</label>
+                    <input class="form-control" type="text" id="id-titulo">
+                    <div class="invalid-feedback">Example invalid custom select feedback</div>
+                </div>
+                <div class="form-group">
+                    <label for="id-monto" class="col-form-label">Monto:</label>
+                    <input type="text" class="form-control" id="id-monto">
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Activado</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Desactivado</label>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="limpiarCampos()" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary" onclick="agregarCargo()" id="btn-modal-agregar" data-dismiss="modal">Agregar</button>
+            </div>
+        </div>
+    </div>
+</div>
